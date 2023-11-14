@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário de Relatório</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo horizontal fundo claro.png" alt="Logo da Empresa">
+    </div>
+  </header>
+  <div class="content">
+    <div class="form-container"></div>
+    <form id="report-form" enctype="multipart/form-data">
+      <!-- Seção 1: Informações Gerais -->
+      <div class="form-container"> 
+      <h2>Informações Gerais</h2>
+      <label for="order-number">Número da OS:</label>
+      <input type="text" id="order-number" name="order-number" required>
+
+      <label for="requesting-department">Setor Solicitante:</label>
+      <input type="text" id="requesting-department" name="requesting-department" required>
+
+      <label for="discipline">Disciplina:</label>
+      <select id="discipline" name="discipline" required>
+        <option value="engenharia-civil">Engenharia Civil</option>
+        <option value="engenharia-eletrica">Engenharia Elétrica</option>
+        <option value="engenharia-mecanica">Engenharia Mecânica</option>
+      </select>
+      <!-- Seção 2: Detalhes da Vistoria -->
+      <h2>Detalhes da Vistoria</h2>
+      <label for="service-work">Serviço / Obra:</label>
+      <input type="text" id="service-work" name="service-work" required>
+
+      <label for="contract">Contrato:</label>
+      <input type="text" id="contract" name="contract" required>
+
+      <label for="inspection-date">Data da Vistoria:</label>
+      <input type="date" id="inspection-date" name="inspection-date" required>
+
+      <label for="representative">Representante Contratado:</label>
+      <input type="text" id="representative" name="representative" required>
+
+      <!-- Seção 3: Objetos Vistoriados -->
+      <h2>Objetos Vistoriados</h2>
+      <label for="objects-photos">Fotos dos Objetos:</label>
+      <input type="file" id="objects-photos" name="objects-photos" accept="image/*" multiple required>
+
+      <button type="submit">Enviar Relatório</button>
+    </form>
+
+    <div id="success-message" style="display: none;">
+      Relatório enviado com sucesso!
+    </div>
+  </div>
+  <script src="formulario.js"></script>
+</body>
+</html>

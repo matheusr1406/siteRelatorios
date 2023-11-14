@@ -1,0 +1,114 @@
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Ajustado para começar no topo */
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  /* Remova a propriedade "margin-bottom" para reduzir o espaçamento entre o cabeçalho e o formulário */
+}
+
+/* Estilo para o logo no cabeçalho */
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilo para o conteúdo (formulário) */
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #8B0000;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Estilo para os campos de entrada */
+.input-wrapper {
+  margin-bottom: 15px;
+}
+
+/* Estilo para o contêiner do formulário */
+.form-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #8B0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+  display: none; /* Inicialmente, a mensagem de erro deve estar oculta */
+}
+
+
+#success-message {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
